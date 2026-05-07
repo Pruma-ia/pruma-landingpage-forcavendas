@@ -71,13 +71,36 @@
 
 ## Traceability
 
-| REQ-ID | Phase |
-|--------|-------|
-| SETUP-01 → SETUP-05 | Phase 1 |
-| UI-01 → UI-04 | Phase 1 |
-| SECT-01 → SECT-04 | Phase 2 |
-| MOCK-01, MOCK-02 | Phase 2 |
-| SECT-05 → SECT-09 | Phase 3 |
-| ANIM-01 → ANIM-03 | Phase 3 |
-| SECT-10 → SECT-12 | Phase 3 |
-| QA-01 → QA-05 | Phase 4 |
+| Requirement | Phase | Status |
+|-------------|-------|--------|
+| SETUP-01 | Phase 1: Foundation | Pending |
+| SETUP-02 | Phase 1: Foundation | Pending |
+| SETUP-03 | Phase 1: Foundation | Pending |
+| SETUP-04 | Phase 1: Foundation | Pending |
+| SETUP-05 | Phase 1: Foundation | Pending |
+| UI-01 | Phase 1: Foundation | Pending |
+| UI-02 | Phase 1: Foundation | Pending |
+| UI-03 | Phase 1: Foundation | Pending |
+| UI-04 | Phase 1: Foundation | Pending |
+| SECT-01 | Phase 2: Hero Experience | Pending |
+| SECT-02 | Phase 2: Hero Experience | Pending |
+| SECT-03 | Phase 2: Hero Experience | Pending |
+| SECT-04 | Phase 2: Hero Experience | Pending |
+| MOCK-01 | Phase 2: Hero Experience | Pending |
+| MOCK-02 | Phase 2: Hero Experience | Pending |
+| SECT-05 | Phase 3: Full LP + Animations | Pending |
+| SECT-06 | Phase 3: Full LP + Animations | Pending |
+| SECT-07 | Phase 3: Full LP + Animations | Pending |
+| SECT-08 | Phase 3: Full LP + Animations | Pending |
+| SECT-09 | Phase 3: Full LP + Animations | Pending |
+| SECT-10 | Phase 3: Full LP + Animations | Pending |
+| SECT-11 | Phase 3: Full LP + Animations | Pending |
+| SECT-12 | Phase 3: Full LP + Animations | Pending |
+| ANIM-01 | Phase 3: Full LP + Animations | Pending |
+| ANIM-02 | Phase 3: Full LP + Animations | Pending |
+| ANIM-03 | Phase 3: Full LP + Animations | Pending |
+| QA-01 | Phase 4: Quality & Polish | Pending |
+| QA-02 | Phase 4: Quality & Polish | Pending |
+| QA-03 | Phase 4: Quality & Polish | Pending |
+| QA-04 | Phase 4: Quality & Polish | Pending |
+| QA-05 | Phase 4: Quality & Polish | Pending |
