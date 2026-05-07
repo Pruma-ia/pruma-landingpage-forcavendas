@@ -15,9 +15,10 @@ export function BrazilMap() {
         <svg
           viewBox="0 0 240 280"
           className="w-full h-auto max-h-[220px]"
-          role="presentation"
-          aria-hidden="true"
+          role="img"
+          aria-labelledby="brazil-map-title"
         >
+          <title id="brazil-map-title">Mapa do Brasil — distribuição territorial de clientes</title>
           <path d={BRAZIL_PATH} fill="#F4F6F9" stroke="#5B6B85" strokeWidth={0.5} />
           {points.map((p) => (
             <g key={p.city}>

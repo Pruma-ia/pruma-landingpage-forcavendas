@@ -41,7 +41,7 @@ export function CTAFinal() {
           >
             {CTA_FINAL.headline}
           </h2>
-          <p className="font-sans text-base lg:text-lg text-pruma-gray-text leading-[1.6] mt-4">
+          <p className="font-sans text-base lg:text-lg text-pruma-navy leading-[1.6] mt-4">
             {CTA_FINAL.subheadline}
           </p>
         </div>
