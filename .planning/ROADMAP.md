@@ -90,8 +90,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] 03-04-PLAN.md — SECT-07 Funcionalidades bento + SECT-12 Footer (Server Components)
 
 **Wave 3** *(blocked on Wave 1)*
-- [ ] 03-05-PLAN.md — SECT-10 ProvaSocial + ANIM-02 counter animation (client)
-- [ ] 03-06-PLAN.md — SECT-11 CTAFinal form + AnimatePresence success state (client)
+- [x] 03-05-PLAN.md — SECT-10 ProvaSocial + ANIM-02 counter animation (client)
+- [x] 03-06-PLAN.md — SECT-11 CTAFinal form + AnimatePresence success state (client)
 
 **Wave 4** *(blocked on Waves 2 + 3)*
 - [ ] 03-07-PLAN.md — ANIM-01 fade-up retroactive on all sections + ANIM-03 hover verification + app/page.tsx composition
