@@ -65,11 +65,11 @@ export function Funcionalidades() {
                   </div>
                 </div>
 
-                {/* Bottom overlay — subtle fade from transparent to pruma-cyan-pale */}
+                {/* Bottom overlay — inset box-shadow cutoff (no gradient, per design constraint) */}
                 <div
                   className="absolute bottom-0 left-0 right-0 h-20 pointer-events-none"
                   style={{
-                    background: "linear-gradient(to bottom, transparent, #E0F6FE)",
+                    boxShadow: "inset 0 -64px 32px -16px #E0F6FE",
                   }}
                   aria-hidden="true"
                 />
