@@ -58,7 +58,7 @@ function AnimatedCounter({ value, prefix = "", suffix = "" }: AnimatedCounterPro
       <span
         ref={ref}
         aria-hidden="true"
-        className="font-serif text-5xl lg:text-[64px] font-semibold text-pruma-cyan leading-none tracking-tight tabular-nums"
+        className="font-serif text-5xl lg:text-[64px] font-semibold text-[#0099CC] leading-none tracking-tight tabular-nums"
       >
         {prefix}0{suffix}
       </span>
@@ -100,11 +100,13 @@ export function ProvaSocial() {
         {/* TODO: substituir com logotipos reais de clientes */}
         <div
           className="flex flex-wrap items-center justify-center gap-8 lg:gap-16 mt-12 lg:mt-16"
+          role="group"
           aria-label="Clientes"
         >
           {PROVA_SOCIAL.logos.map((logo) => (
             <div
               key={logo.id}
+              role="img"
               className="flex items-center justify-center h-12 grayscale opacity-40"
               aria-label={logo.alt}
             >

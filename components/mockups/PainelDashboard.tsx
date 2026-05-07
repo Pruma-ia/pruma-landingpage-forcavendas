@@ -4,13 +4,13 @@ import { AbcChart } from "@/components/mockups/_AbcChart";
 import { BrazilMap } from "@/components/mockups/_BrazilMap";
 
 const deltaToneClass: Record<"cyan" | "navy" | "red", string> = {
-  cyan: "text-pruma-cyan",
+  cyan: "text-[#0077AA]",
   navy: "text-pruma-navy",
-  red: "text-pruma-red",
+  red: "text-[#9B1C1C]",
 };
 
 const statusPillClass: Record<"Crítico" | "Atenção", string> = {
-  Crítico: "bg-pruma-red/10 text-pruma-red",
+  Crítico: "bg-pruma-red/10 text-[#9B1C1C]",
   Atenção: "bg-pruma-cyan-pale text-pruma-navy-deep",
 };
 
@@ -73,7 +73,7 @@ export function PainelDashboard() {
       {/* Band 4 — Risk table */}
       <div className="rounded-pruma-md border border-pruma-gray-soft overflow-hidden">
         <div className="flex items-center justify-between bg-pruma-off-white border-b border-pruma-gray-soft px-5 py-3">
-          <h4 className="font-serif text-base font-semibold text-pruma-navy">{MOCK_PAINEL.risk.title}</h4>
+          <p className="font-serif text-base font-semibold text-pruma-navy">{MOCK_PAINEL.risk.title}</p>
           <span className="font-sans text-xs text-pruma-gray-text">{MOCK_PAINEL.risk.summary}</span>
         </div>
         <ul>

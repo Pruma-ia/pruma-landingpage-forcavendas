@@ -10,7 +10,7 @@ export function AbcChart() {
   const { title, subtitle, bars } = MOCK_PAINEL.abc;
   return (
     <div className="rounded-pruma-md border border-pruma-gray-soft p-5 h-full flex flex-col">
-      <h4 className="font-serif text-base font-semibold text-pruma-navy">{title}</h4>
+      <p className="font-serif text-base font-semibold text-pruma-navy">{title}</p>
       <p className="font-sans text-xs text-pruma-gray-text mt-1">{subtitle}</p>
 
       <div className="relative mt-5 flex-1 min-h-[160px]">

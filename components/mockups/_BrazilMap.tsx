@@ -9,7 +9,7 @@ export function BrazilMap() {
   const { title, points } = MOCK_PAINEL.map;
   return (
     <div className="rounded-pruma-md border border-pruma-gray-soft p-5 h-full flex flex-col">
-      <h4 className="font-serif text-base font-semibold text-pruma-navy">{title}</h4>
+      <p className="font-serif text-base font-semibold text-pruma-navy">{title}</p>
 
       <div className="relative mt-3 flex-1 flex items-center justify-center">
         <svg

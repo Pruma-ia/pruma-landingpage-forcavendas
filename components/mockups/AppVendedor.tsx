@@ -13,9 +13,9 @@ export function AppVendedor() {
       {/* Header */}
       <header className="flex items-start justify-between gap-3 px-5 py-4 border-b border-pruma-gray-soft">
         <div className="min-w-0">
-          <h4 className="font-serif text-base font-semibold text-pruma-navy leading-tight truncate">
+          <p className="font-serif text-base font-semibold text-pruma-navy leading-tight truncate">
             {MOCK_APP.client}
-          </h4>
+          </p>
           <p className="font-sans text-xs text-pruma-gray-text mt-1">{MOCK_APP.meta}</p>
         </div>
         <span className="inline-flex items-center gap-1.5 rounded-pruma-sm bg-pruma-cyan-pale px-2 py-1 font-mono text-[10px] font-normal uppercase tracking-eyebrow text-pruma-navy-deep flex-shrink-0">
