@@ -52,7 +52,21 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Diagnóstico section shows 3 cards on `#E0F6FE` background with the correct structural pain points
   4. Tese Pruma section displays the editorial centered headline at 56px with body copy at max-width 720px
   5. AppVendedor and PainelDashboard render as HTML/CSS components with the specified data (Auto Center São Paulo, KPI cards, ABC curve, risk table)
-**Plans**: TBD
+**Plans**: 3 plans
+
+**Wave 1**
+- [ ] 02-01-PLAN.md — lib/constants.ts (copy + mockup data) + Navbar (sticky, scroll-blur, mobile drawer) + layout.tsx (mount Navbar)
+
+**Wave 2** *(blocked on Wave 1)*
+- [ ] 02-03-PLAN.md — Mockups: AppVendedor + PainelDashboard (with _BrazilMap and _AbcChart helpers)
+
+**Wave 3** *(blocked on Waves 1 + 2)*
+- [ ] 02-02-PLAN.md — Hero (embeds PainelDashboard) + Diagnóstico (3 cards) + Tese + app/page.tsx composition
+
+**Cross-cutting constraints:**
+- All Phase 2 sections consume copy/data from lib/constants.ts — Plan 02-01 must complete before any other plan starts
+- Hero (02-02) embeds PainelDashboard from 02-03 — Wave 3 cannot start until 02-03 ships
+
 **UI hint**: yes
 
 ### Phase 3: Full LP + Animations
