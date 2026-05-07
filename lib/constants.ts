@@ -1,36 +1,36 @@
 // lib/constants.ts
 // Strings canônicas da LP Pruma — editar aqui para atualizar todo o site
 
-/** Título da página e meta Open Graph */
+/* EDITÁVEL: título da aba do navegador e meta title para SEO */
 export const SITE_TITLE =
   "Pruma | App Web de Força de Vendas B2B para Indústrias e Distribuidoras";
 
-/** Meta description (~150 chars) */
+/* EDITÁVEL: meta description (~150 chars) exibida nos resultados de busca */
 export const SITE_DESCRIPTION =
   "Governe sua operação comercial B2B com visibilidade total — do vendedor em campo ao conselho. App web para indústrias e distribuidoras.";
 
 // ─── CTAs ─────────────────────────────────────────────────────────────────
-/** CTA principal: aparece em Navbar, Hero e CTA Final (mínimo 3 ocorrências) */
+/* EDITÁVEL: texto do botão CTA principal — aparece em Navbar, Hero e Footer */
 export const CTA_PRIMARY = "Falar com um consultor";
 
-/** CTA secundário: botão ghost no Hero */
+/* EDITÁVEL: texto do botão secundário ghost no Hero */
 export const CTA_SECONDARY = "Conhecer o app";
 
-/** CTA do formulário CTA Final */
+/* EDITÁVEL: texto do botão de submit no formulário de contato */
 export const CTA_FORM = "Agendar conversa com consultor";
 
 // ─── Estados do formulário ─────────────────────────────────────────────────
-/** Texto de instrução do formulário vazio */
+/* EDITÁVEL: texto de instrução exibido no formulário antes do preenchimento */
 export const FORM_EMPTY_STATE =
   "Preencha os campos abaixo para conversar com um consultor.";
 
-/** Mensagem de sucesso após envio do formulário */
+/* EDITÁVEL: mensagem exibida após envio do formulário */
 export const FORM_SUCCESS =
   "Recebemos. Em breve um consultor da Pruma entra em contato.";
 
 // ─── Navegação ────────────────────────────────────────────────────────────────
 
-/** Wordmark da marca exibido no Navbar e Footer */
+/* EDITÁVEL: wordmark da marca exibido no Navbar e Footer */
 export const BRAND_NAME = "PRUMA";
 
 /** Links âncora do Navbar (4 itens, ordem fixa). hrefs apontam para ids de seções da LP. */
@@ -43,25 +43,26 @@ export const NAV_LINKS = [
 
 // ─── Hero (SECT-02) ──────────────────────────────────────────────────────────
 
-/** Copy da seção Hero — D-07, D-08, D-09. Editar aqui troca em todo o site. */
+/* EDITÁVEL: copy da seção Hero */
 export const HERO = {
-  eyebrow: "— APP WEB DE FORÇA DE VENDAS B2B",
-  headlineLine1: "Operações comerciais B2B",
-  headlineLine2: "que precisam parar de improvisar.",
+  eyebrow: "— APP WEB DE FORÇA DE VENDAS B2B", /* EDITÁVEL: subtítulo acima do headline */
+  headlineLine1: "Operações comerciais B2B",   /* EDITÁVEL: primeira linha do headline hero */
+  headlineLine2: "que precisam parar de improvisar.", /* EDITÁVEL: segunda linha do headline hero */
   subheadline:
-    "Pruma instala o sistema de governança comercial — do vendedor em campo ao conselho.",
+    "Pruma instala o sistema de governança comercial — do vendedor em campo ao conselho.", /* EDITÁVEL: parágrafo de suporte abaixo do headline */
   microcopy:
-    "SEM CONTRATO DE FIDELIDADE · IMPLANTAÇÃO EM 30 DIAS · DADO REAL DE OPERAÇÃO",
+    "SEM CONTRATO DE FIDELIDADE · IMPLANTAÇÃO EM 30 DIAS · DADO REAL DE OPERAÇÃO", /* EDITÁVEL: microcopy abaixo dos botões CTA */
 } as const;
 
 // ─── Diagnóstico (SECT-03) ────────────────────────────────────────────────────
 
-/** Copy da seção Diagnóstico — D-10, D-11. Títulos dos cards são LOCKED por requisito. */
+/* EDITÁVEL: copy da seção Diagnóstico */
 export const DIAGNOSTICO = {
   eyebrow: "— DIAGNÓSTICO",
   headline: "O que está quebrado raramente é o app.",
   subheadline:
     "Três sintomas que aparecem antes de qualquer reunião de resultado.",
+  /* EDITÁVEL: os 3 cards de diagnóstico — títulos e bodys substituíveis */
   cards: [
     {
       title: "Visibilidade tardia",
@@ -86,7 +87,7 @@ export const DIAGNOSTICO = {
 
 // ─── Tese Pruma (SECT-04) ─────────────────────────────────────────────────────
 
-/** Copy da Tese Pruma — D-13 (headline LOCKED), D-14 (parágrafo). */
+/* EDITÁVEL: copy da seção Tese Pruma */
 export const TESE = {
   eyebrow: "— TESE PRUMA",
   headline: "Força de vendas não é um app.",
@@ -192,7 +193,7 @@ export const MOCK_PAINEL = {
 
 // ─── Como Funciona (SECT-05) ──────────────────────────────────────────────────
 
-/** Copy da seção Como Funciona — Claude defines per D-04, SECT-05 spec. Usuário/campo perspective. */
+/* EDITÁVEL: copy da seção Como Funciona */
 export const COMO_FUNCIONA = {
   eyebrow: "— COMO FUNCIONA",
   headline: "Quatro passos. Do território ao painel.",
@@ -227,7 +228,7 @@ export const COMO_FUNCIONA = {
 
 // ─── Painel do Gestor (SECT-06) ───────────────────────────────────────────────
 
-/** Copy da seção Painel do Gestor — D-17, D-19. 4 callouts provocativos, tom conselheiro sênior. */
+/* EDITÁVEL: copy da seção Painel do Gestor */
 export const PAINEL_GESTOR = {
   eyebrow: "— PAINEL DO GESTOR",
   headline: "O painel não é um relatório. É uma decisão.",
@@ -254,7 +255,7 @@ export const PAINEL_GESTOR = {
 
 // ─── Funcionalidades (SECT-07) ────────────────────────────────────────────────
 
-/** Copy da seção Funcionalidades — D-01 through D-04. Bento grid: 1 hero + 5 cards. */
+/* EDITÁVEL: copy da seção Funcionalidades */
 export const FUNCIONALIDADES = {
   eyebrow: "— FUNCIONALIDADES",
   headline: "Seis instrumentos. Um sistema.",
@@ -307,7 +308,7 @@ export const FUNCIONALIDADES = {
 
 // ─── Para Quem (SECT-08) ──────────────────────────────────────────────────────
 
-/** Copy da seção Para Quem — Claude defines per SECT-08 spec. 3 perfis com âncoras de receita. */
+/* EDITÁVEL: copy da seção Para Quem */
 export const PARA_QUEM = {
   eyebrow: "— PARA QUEM",
   headline: "Operações que decidem em escala, não em planilha.",
@@ -343,7 +344,7 @@ export const PARA_QUEM = {
 
 // ─── Diferencial Pruma (SECT-09) ──────────────────────────────────────────────
 
-/** Copy da seção Diferencial Pruma — dark section. 3 pilares: método, tecnologia, implantação. */
+/* EDITÁVEL: copy da seção Diferencial Pruma */
 export const DIFERENCIAL = {
   eyebrow: "— DIFERENCIAL PRUMA",
   headline: "Não é app. É método com tecnologia.",
@@ -376,12 +377,13 @@ export const DIFERENCIAL = {
 
 // ─── Prova Social (SECT-10) ───────────────────────────────────────────────────
 
-/** Copy da seção Prova Social — placeholder data, TODO para substituição com dados reais do cliente. */
+/* EDITÁVEL: copy da seção Prova Social */
 export const PROVA_SOCIAL = {
   eyebrow: "— PROVA SOCIAL",
   headline: "Operações reais. Resultados que cabem em uma linha.",
   subheadline:
     "Números de operações que deixaram de improvisar.",
+  /* EDITÁVEL: substitua com métricas reais validadas pelo cliente antes do go-live */
   metrics: [
     {
       value: 847,
@@ -402,6 +404,7 @@ export const PROVA_SOCIAL = {
       label: "ECONOMIZADAS/VENDEDOR/SEMANA",
     },
   ],
+  /* EDITÁVEL: substitua com depoimento real autorizado pelo cliente antes do go-live */
   depoimento: {
     quote:
       "Antes do Pruma, a reunião mensal era uma sessão de arqueologia de planilha. Hoje o conselho entra na sala com os números do dia.",
@@ -409,6 +412,7 @@ export const PROVA_SOCIAL = {
     role: "Diretor Comercial",
     company: "Distribuidora Regional do setor automotivo",
   },
+  /* EDITÁVEL: substitua com logotipos reais de clientes */
   logos: [
     { id: "logo-1", alt: "Logo placeholder — substituir" },
     { id: "logo-2", alt: "Logo placeholder — substituir" },
@@ -418,7 +422,7 @@ export const PROVA_SOCIAL = {
 
 // ─── CTA Final (SECT-11) ──────────────────────────────────────────────────────
 
-/** Copy da seção CTA Final — formulário com 8 campos (6 text/email/tel/textarea + 2 selects). */
+/* EDITÁVEL: copy da seção CTA Final */
 export const CTA_FINAL = {
   eyebrow: "— FALE COM UM CONSULTOR",
   headline: "Ver Pruma rodando na sua operação.",
@@ -476,10 +480,11 @@ export const CTA_FINAL = {
 
 // ─── Footer (SECT-12) ─────────────────────────────────────────────────────────
 
+/* EDITÁVEL: defina NEXT_PUBLIC_CONTACT_EMAIL no .env.local para substituir o email de contato */
 const contactEmail =
   process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "contato@pruma.com.br";
 
-/** Copy do Footer — fundo azul marinho, 3 colunas de links, tagline, copyright. */
+/* EDITÁVEL: copy do Footer */
 export const FOOTER = {
   tagline: "Governança comercial para B2B",
   columns: [
@@ -509,5 +514,6 @@ export const FOOTER = {
       ],
     },
   ],
+  /* EDITÁVEL: ano e nome jurídico da empresa */
   copyright: "© 2026 Pruma Consultoria. Todos os direitos reservados.",
 };
