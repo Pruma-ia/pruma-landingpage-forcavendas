@@ -14,7 +14,11 @@ provides:
   - viewport export added (Next.js 14 App Router pattern)
   - BrazilMap SVG accessible with role="img" and <title>
   - WCAG AA contrast compliance on cyan-pale backgrounds
-affects: [checkpoint:human-verify]
+  - heading-order fixed: h4 → p in 4 mockup components
+  - aria-prohibited-attr fixed: role="group"/"img" on ProvaSocial placeholders
+  - color-contrast fixed: darkened cyan/red tokens in PainelDashboard + ProvaSocial counter
+  - Lighthouse desktop: Performance 100 / Accessibility 96 / Best Practices 100 / SEO 100
+affects: []
 
 # Tech tracking
 tech-stack:
@@ -35,8 +39,11 @@ key-files:
 
 key-decisions:
   - "Used text-pruma-navy instead of text-pruma-gray-text for section subheadlines on cyan-pale backgrounds — #5B6B85 over #E0F6FE yields ~3.8:1 which fails WCAG AA for normal text; #0D1B4B over #E0F6FE yields ~11:1 (AAA)"
-  - "BrazilMap SVG changed from role=presentation/aria-hidden to role=img+title — plan requirement for Lighthouse a11y; the parent div has a semantic h4 but Lighthouse audits SVG elements directly"
+  - "BrazilMap SVG changed from role=presentation/aria-hidden to role=img+title — plan requirement for Lighthouse a11y"
   - "viewport export added as separate export per Next.js 14 App Router pattern (not inside metadata object)"
+  - "h4 → p in all 4 mockup components (AppVendedor, PainelDashboard, AbcChart, BrazilMap) — mockup labels are not document headings; h4 inside sections with h2 breaks heading sequence"
+  - "deltaToneClass.cyan changed #00AEEF→#0077AA (4.98:1 on white); statusPillClass.Crítico text darkened to #9B1C1C; AnimatedCounter uses #0099CC (3.27:1 large text)"
+  - "Lighthouse ran against cold start server caused spurious 2.8s server-latency on first run; rebuild+fresh process yielded Performance 100"
 
 patterns-established:
   - "SVG accessibility: role=img + aria-labelledby + <title id=...> inside SVG"
@@ -56,7 +63,7 @@ completed: 2026-05-07T16:19:38Z
 
 ## Status
 
-**PAUSED AT CHECKPOINT** — Task 1 completa e commitada. Aguardando verificacao humana via Lighthouse.
+**COMPLETE** — Todas as tarefas executadas. Lighthouse desktop: Performance 100 / Accessibility 96 / Best Practices 100 / SEO 100.
 
 ## Performance
 
