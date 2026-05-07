@@ -1,5 +1,5 @@
 ---
-status: partial
+status: approved
 phase: 03-full-lp-animations
 source: [03-VERIFICATION.md]
 started: 2026-05-07T00:00:00Z

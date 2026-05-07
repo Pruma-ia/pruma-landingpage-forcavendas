@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation** - Next.js scaffold, Pruma design tokens, and UI component primitives *(complete 2026-05-06)*
 - [x] **Phase 2: Hero Experience** - Above-fold sections (Navbar, Hero, Diagnóstico, Tese) plus both HTML/CSS mockup components *(complete 2026-05-07)*
-- [ ] **Phase 3: Full LP + Animations** - Remaining 8 sections (Como Funciona → Footer) with Framer Motion animation layer
+- [x] **Phase 3: Full LP + Animations** - Remaining 8 sections (Como Funciona → Footer) with Framer Motion animation layer *(complete 2026-05-07)*
 - [ ] **Phase 4: Quality & Polish** - Responsiveness audit, Lighthouse validation, copy centralization, and CTA placement verification
 
 ## Phase Details
