@@ -94,7 +94,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] 03-06-PLAN.md — SECT-11 CTAFinal form + AnimatePresence success state (client)
 
 **Wave 4** *(blocked on Waves 2 + 3)*
-- [ ] 03-07-PLAN.md — ANIM-01 fade-up retroactive on all sections + ANIM-03 hover verification + app/page.tsx composition
+- [x] 03-07-PLAN.md — ANIM-01 fade-up retroactive on all sections + ANIM-03 hover verification + app/page.tsx composition
 
 **Cross-cutting constraints:**
 - All Phase 3 sections consume copy from lib/constants.ts — Plan 03-01 must complete before any other plan starts
