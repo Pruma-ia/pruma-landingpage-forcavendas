@@ -10,7 +10,8 @@ type ButtonProps = {
   children: React.ReactNode;
   className?: string;
   disabled?: boolean;
-} & ButtonHTMLAttributes<HTMLButtonElement>;
+  onClick?: React.MouseEventHandler<HTMLElement>;
+} & Omit<ButtonHTMLAttributes<HTMLButtonElement>, "onClick">;
 
 const baseStyles =
   "inline-flex items-center justify-center gap-2 font-sans text-sm font-medium min-h-[44px] px-6 py-3.5 rounded-pruma-sm transition-[transform,box-shadow,background-color,border-color] duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pruma-cyan focus-visible:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed";
@@ -30,6 +31,7 @@ export function Button({
   children,
   className,
   disabled,
+  onClick,
   ...props
 }: ButtonProps) {
   const classes = cn(baseStyles, variantStyles[variant], className);
@@ -40,6 +42,7 @@ export function Button({
         href={href}
         className={cn(classes, disabled && "pointer-events-none opacity-50")}
         aria-disabled={disabled}
+        onClick={onClick}
       >
         {iconLeft && (
           <span className="flex-shrink-0 w-4 h-4">{iconLeft}</span>
@@ -53,7 +56,7 @@ export function Button({
   }
 
   return (
-    <button className={classes} disabled={disabled} {...props}>
+    <button className={classes} disabled={disabled} onClick={onClick} {...props}>
       {iconLeft && (
         <span className="flex-shrink-0 w-4 h-4">{iconLeft}</span>
       )}
