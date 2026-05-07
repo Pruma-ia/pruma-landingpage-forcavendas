@@ -13,7 +13,7 @@ Four coarse phases deliver a complete, production-ready landing page for Pruma's
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation** - Next.js scaffold, Pruma design tokens, and UI component primitives *(complete 2026-05-06)*
-- [ ] **Phase 2: Hero Experience** - Above-fold sections (Navbar, Hero, Diagnóstico, Tese) plus both HTML/CSS mockup components
+- [x] **Phase 2: Hero Experience** - Above-fold sections (Navbar, Hero, Diagnóstico, Tese) plus both HTML/CSS mockup components *(complete 2026-05-07)*
 - [ ] **Phase 3: Full LP + Animations** - Remaining 8 sections (Como Funciona → Footer) with Framer Motion animation layer
 - [ ] **Phase 4: Quality & Polish** - Responsiveness audit, Lighthouse validation, copy centralization, and CTA placement verification
 
@@ -102,6 +102,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete | 2026-05-06 |
-| 2. Hero Experience | 3/3 | Executing | - |
+| 2. Hero Experience | 3/3 | Complete | 2026-05-07 |
 | 3. Full LP + Animations | 0/TBD | Not started | - |
 | 4. Quality & Polish | 0/TBD | Not started | - |
