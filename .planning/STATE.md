@@ -5,7 +5,7 @@ milestone_name: milestone
 status: ready
 stopped_at: ""
 last_updated: "2026-05-07T00:00:00.000Z"
-last_activity: 2026-05-07 -- Phase 3 context gathered
+last_activity: 2026-05-07 -- Phase 3 UI-SPEC approved
 progress:
   total_phases: 4
   completed_phases: 2
@@ -88,5 +88,5 @@ None.
 ## Session Continuity
 
 Last session: 2026-05-07
-Stopped at: Phase 3 contexto capturado — pronto para `/gsd-plan-phase 3`
+Stopped at: Phase 3 UI-SPEC approved — pronto para `/gsd-plan-phase 3 --skip-ui`
 Resume file: None
