@@ -28,6 +28,10 @@ const mono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: SITE_TITLE,
   description: SITE_DESCRIPTION,
+  icons: {
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
+  },
   robots: {
     index: true,
     follow: true,

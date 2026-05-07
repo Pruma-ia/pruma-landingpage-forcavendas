@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
@@ -52,11 +53,15 @@ export function Navbar() {
     >
       <Container as="div" className="flex items-center justify-between h-14 md:h-16">
         {/* Logo */}
-        <Link
-          href="/"
-          className="font-serif font-semibold text-lg md:text-xl text-pruma-navy tracking-tight min-w-[80px]"
-        >
-          {BRAND_NAME}
+        <Link href="/" aria-label={BRAND_NAME} className="flex items-center min-w-[80px]">
+          <Image
+            src="/logo.png"
+            alt={BRAND_NAME}
+            width={96}
+            height={32}
+            priority
+            className="h-7 w-auto md:h-8"
+          />
         </Link>
 
         {/* Desktop nav links — hidden on mobile */}
@@ -111,9 +116,13 @@ export function Navbar() {
             }}
           >
             <Container as="div" className="flex items-center justify-between h-14">
-              <span className="font-serif font-semibold text-lg text-pruma-navy tracking-tight">
-                {BRAND_NAME}
-              </span>
+              <Image
+                src="/logo.png"
+                alt={BRAND_NAME}
+                width={96}
+                height={32}
+                className="h-7 w-auto"
+              />
               <button
                 type="button"
                 onClick={() => setOpen(false)}
