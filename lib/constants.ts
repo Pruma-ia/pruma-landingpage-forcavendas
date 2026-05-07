@@ -99,7 +99,7 @@ export const TESE = {
 export const MOCK_APP = {
   client: "Auto Center São Paulo Ltda",
   meta: "Pedido #4821 · Hoje, 14:32",
-  status: "🟢 ONLINE",
+  status: "ONLINE",
   cta: "Fechar pedido",
   items: [
     { name: "Filtro de óleo Mann W712/95",         qty: 24, unit: 38.9,  subtotal: 933.6 },
