@@ -49,7 +49,7 @@ export function Funcionalidades() {
 
           <motion.p
             variants={item}
-            className="font-sans text-base lg:text-lg text-pruma-gray-text leading-[1.6] mt-4 max-w-[60ch]"
+            className="font-sans text-base lg:text-lg text-pruma-navy leading-[1.6] mt-4 max-w-[60ch]"
           >
             {FUNCIONALIDADES.subheadline}
           </motion.p>

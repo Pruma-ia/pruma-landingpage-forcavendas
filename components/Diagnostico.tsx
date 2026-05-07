@@ -44,7 +44,7 @@ export function Diagnostico() {
 
           <motion.p
             variants={item}
-            className="font-sans text-base lg:text-lg font-normal text-pruma-gray-text leading-[1.6] mt-4 max-w-[60ch]"
+            className="font-sans text-base lg:text-lg font-normal text-pruma-navy leading-[1.6] mt-4 max-w-[60ch]"
           >
             {DIAGNOSTICO.subheadline}
           </motion.p>
