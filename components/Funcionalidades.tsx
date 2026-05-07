@@ -85,8 +85,8 @@ export function Funcionalidades() {
 
             {/* 5 smaller cards */}
             {smallFeatures.map((feature) => {
-              const iconName = feature.iconName as keyof typeof iconMap;
-              const Icon = iconMap[iconName];
+              const iconName = feature.iconName;
+              const Icon = iconName in iconMap ? iconMap[iconName as keyof typeof iconMap] : null;
               return (
                 <motion.li key={feature.title} variants={item}>
                   <Card as="div" interactive className="p-6">
