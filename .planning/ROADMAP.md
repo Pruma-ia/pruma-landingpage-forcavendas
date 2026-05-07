@@ -85,9 +85,9 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] 03-01-PLAN.md — lib/constants.ts: 8 new section copy exports (foundation for all sections)
 
 **Wave 2** *(blocked on Wave 1)*
-- [ ] 03-02-PLAN.md — SECT-05 ComoFunciona + SECT-08 ParaQuem (Server Components)
-- [ ] 03-03-PLAN.md — SECT-06 PainelGestor + SECT-09 Diferencial (Server Components, dark section)
-- [ ] 03-04-PLAN.md — SECT-07 Funcionalidades bento + SECT-12 Footer (Server Components)
+- [x] 03-02-PLAN.md — SECT-05 ComoFunciona + SECT-08 ParaQuem (Server Components)
+- [x] 03-03-PLAN.md — SECT-06 PainelGestor + SECT-09 Diferencial (Server Components, dark section)
+- [x] 03-04-PLAN.md — SECT-07 Funcionalidades bento + SECT-12 Footer (Server Components)
 
 **Wave 3** *(blocked on Wave 1)*
 - [ ] 03-05-PLAN.md — SECT-10 ProvaSocial + ANIM-02 counter animation (client)
