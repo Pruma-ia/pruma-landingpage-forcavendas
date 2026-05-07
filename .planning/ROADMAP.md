@@ -111,8 +111,20 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. Lighthouse desktop scores: Performance 90+, Accessibility 95+, Best Practices 95+, SEO 100
   3. `npm run build` completes with zero TypeScript errors and zero warnings
   4. All LP copy lives in `/lib/constants.ts` with inline comments marking editable fields
-  5. "Falar com um consultor" CTA appears in Navbar, Hero section, and CTA Final (minimum 3 distinct touchpoints)
-**Plans**: TBD
+  5. "Falar com um consultor" CTA appears in Navbar, Hero section, and Footer (minimum 3 distinct touchpoints)
+**Plans**: 4 plans
+
+**Wave 1** *(paralelo — sem dependências mútuas)*
+- [ ] 04-01-PLAN.md — Build verification: TypeScript audit + ESLint audit + fix zero-day errors
+- [ ] 04-02-PLAN.md — Copy centralization audit + /* EDITÁVEL */ comments + CTA touchpoints verification
+
+**Wave 2** *(bloqueada na conclusão de 04-01)*
+- [ ] 04-03-PLAN.md — Responsiveness audit (375px, 768px, 1024px, 1440px) + overflow fixes + touch targets
+- [ ] 04-04-PLAN.md — Lighthouse desktop audit + SEO meta + accessibility fixes + Best Practices fixes
+
+**Cross-cutting constraints:**
+- Wave 2 requer build limpo de 04-01 antes de rodar
+- 04-03 e 04-04 podem rodar em paralelo na Wave 2 (não compartilham arquivos)
 
 ## Progress
 
@@ -123,5 +135,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete | 2026-05-06 |
 | 2. Hero Experience | 3/3 | Complete | 2026-05-07 |
-| 3. Full LP + Animations | 0/TBD | Not started | - |
-| 4. Quality & Polish | 0/TBD | Not started | - |
+| 3. Full LP + Animations | 7/7 | Complete | 2026-05-07 |
+| 4. Quality & Polish | 0/4 | Not started | - |
