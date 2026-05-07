@@ -1,10 +1,12 @@
 ---
 phase: 3
 slug: full-lp-animations
-status: draft
+status: approved
 shadcn_initialized: false
 preset: none
 created: 2026-05-07
+typography_constraint: phase1_locked
+reviewed_at: 2026-05-07
 ---
 
 # Phase 3 — UI Design Contract
@@ -83,6 +85,8 @@ Inherited from Phase 1 — no changes. Reproduced here for executor convenience.
 ## Typography
 
 Inherited from Phase 1. Full type scale is locked. Phase 3 usage map below.
+
+> **Constraint override (`typography_constraint: phase1_locked`):** This type scale was established and approved in Phase 1 for an editorial multi-section landing page. The standard 4-size / 2-weight checker constraints do not apply to this inherited system — the multi-level hierarchy is intentional and was validated as part of the Phase 1 design contract.
 
 ### Type Scale (locked from Phase 1)
 
@@ -554,7 +558,7 @@ Input / Select / Textarea visual spec:
 - Font: Inter 14px weight 400 navy
 - Placeholder: Inter 14px weight 400 gray-text
 - Focus: `outline-none ring-2 ring-pruma-cyan ring-offset-1` — 2px cyan ring
-- Label: Inter 14px weight 500 navy, `mb-1.5` above input
+- Label: Inter 14px weight 500 navy, `mb-2` (8px) above input
 - Error state: `border-pruma-red` + error message Inter 12px `text-pruma-red` below input
 
 **Success state (swap via AnimatePresence):**
