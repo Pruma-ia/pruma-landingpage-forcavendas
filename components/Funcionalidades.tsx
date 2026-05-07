@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Card } from "@/components/ui/Card";
-import { PainelDashboard } from "@/components/mockups/PainelDashboard";
+import { PainelDashboardFull } from "@/components/mockups/PainelDashboardFull";
 import { SectionReveal } from "@/components/SectionReveal";
 import { useFadeUpVariants } from "@/hooks/useFadeUpVariants";
 import { FUNCIONALIDADES } from "@/lib/constants";
@@ -61,7 +61,7 @@ export function Funcionalidades() {
                 {/* Mockup window — scale 0.72 per UI-SPEC bento hero card */}
                 <div className="overflow-hidden w-full" style={{ height: "320px" }}>
                   <div style={{ transform: "scale(0.72)", transformOrigin: "top center" }}>
-                    <PainelDashboard />
+                    <PainelDashboardFull />
                   </div>
                 </div>
 

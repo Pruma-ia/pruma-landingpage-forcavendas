@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
-import { PainelDashboard } from "@/components/mockups/PainelDashboard";
+import { PainelDashboardFull } from "@/components/mockups/PainelDashboardFull";
 import { SectionReveal } from "@/components/SectionReveal";
 import { useFadeUpVariants } from "@/hooks/useFadeUpVariants";
 import { PAINEL_GESTOR } from "@/lib/constants";
@@ -36,7 +36,7 @@ export function PainelGestor() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr_1fr] gap-8 lg:gap-12 items-center mt-12 lg:mt-20">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_3fr_1fr] gap-8 lg:gap-10 items-center mt-12 lg:mt-20">
             {/* Left callouts — 01 e 02 */}
             <div className="flex flex-col gap-10 order-2 lg:order-1">
               {leftCallouts.map((callout) => (
@@ -52,13 +52,8 @@ export function PainelGestor() {
             </div>
 
             {/* Center mockup — primeiro no mobile */}
-            <motion.div
-              variants={item}
-              className="order-1 lg:order-2 overflow-x-auto -mx-4 sm:-mx-6 px-4 sm:px-6 lg:mx-0 lg:px-0 max-w-full"
-            >
-              <div className="min-w-0">
-                <PainelDashboard />
-              </div>
+            <motion.div variants={item} className="order-1 lg:order-2">
+              <PainelDashboardFull />
             </motion.div>
 
             {/* Right callouts — 03 e 04 */}

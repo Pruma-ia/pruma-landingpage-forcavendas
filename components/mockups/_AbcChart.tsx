@@ -13,7 +13,7 @@ export function AbcChart() {
       <p className="font-serif text-base font-semibold text-pruma-navy">{title}</p>
       <p className="font-sans text-xs text-pruma-gray-text mt-1">{subtitle}</p>
 
-      <div className="relative mt-5 flex-1 min-h-[160px]">
+      <div className="relative mt-5 h-[120px]">
         <div
           className="absolute left-0 right-0 top-1/2 border-t border-dashed border-pruma-gray-soft"
           aria-hidden="true"

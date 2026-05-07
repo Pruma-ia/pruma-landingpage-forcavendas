@@ -30,7 +30,7 @@ export function Hero() {
           <motion.h1
             variants={item}
             id="hero-heading"
-            className="font-serif text-[40px] lg:text-[72px] font-medium text-pruma-navy leading-[1.05] tracking-tight max-w-[12ch]"
+            className="font-serif text-[40px] lg:text-[64px] font-normal text-pruma-navy leading-[1.08] tracking-[-0.01em] max-w-[14ch]"
           >
             {HERO.headlineLine1}
             <br />
@@ -64,12 +64,10 @@ export function Hero() {
           </motion.p>
         </SectionReveal>
 
-        {/* Coluna do mockup — direita, pan horizontal em mobile */}
+        {/* Coluna do mockup — direita */}
         <SectionReveal className="lg:col-span-5 w-full">
-          <motion.div variants={item} className="overflow-x-auto -mx-4 sm:-mx-6 px-4 sm:px-6 lg:mx-0 lg:px-0 max-w-full">
-            <div className="min-w-0">
-              <PainelDashboard />
-            </div>
+          <motion.div variants={item}>
+            <PainelDashboard />
           </motion.div>
         </SectionReveal>
       </Container>

@@ -152,14 +152,14 @@ export const MOCK_PAINEL = {
   map: {
     title: "Distribuição territorial",
     points: [
-      { city: "São Paulo",      cx: 172, cy: 174, r: 9 },
-      { city: "Belo Horizonte", cx: 185, cy: 158, r: 7 },
-      { city: "Rio de Janeiro", cx: 195, cy: 175, r: 7 },
-      { city: "Curitiba",       cx: 158, cy: 195, r: 6 },
-      { city: "Porto Alegre",   cx: 148, cy: 230, r: 6 },
-      { city: "Recife",         cx: 220, cy: 110, r: 5 },
-      { city: "Salvador",       cx: 212, cy: 130, r: 5 },
-      { city: "Goiânia",        cx: 165, cy: 142, r: 4 },
+      { city: "São Paulo",      cx: 168, cy: 206, r: 9 },
+      { city: "Belo Horizonte", cx: 184, cy: 181, r: 7 },
+      { city: "Rio de Janeiro", cx: 190, cy: 202, r: 7 },
+      { city: "Curitiba",       cx: 151, cy: 220, r: 6 },
+      { city: "Porto Alegre",   cx: 141, cy: 252, r: 6 },
+      { city: "Recife",         cx: 234, cy: 96,  r: 5 },
+      { city: "Salvador",       cx: 217, cy: 131, r: 5 },
+      { city: "Goiânia",        cx: 151, cy: 157, r: 4 },
     ],
   },
   risk: {
