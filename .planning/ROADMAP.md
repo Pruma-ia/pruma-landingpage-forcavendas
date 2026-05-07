@@ -61,7 +61,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] 02-03-PLAN.md — Mockups: AppVendedor + PainelDashboard (with _BrazilMap and _AbcChart helpers)
 
 **Wave 3** *(blocked on Waves 1 + 2)*
-- [ ] 02-02-PLAN.md — Hero (embeds PainelDashboard) + Diagnóstico (3 cards) + Tese + app/page.tsx composition
+- [x] 02-02-PLAN.md — Hero (embeds PainelDashboard) + Diagnóstico (3 cards) + Tese + app/page.tsx composition
 
 **Cross-cutting constraints:**
 - All Phase 2 sections consume copy/data from lib/constants.ts — Plan 02-01 must complete before any other plan starts
@@ -102,6 +102,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete | 2026-05-06 |
-| 2. Hero Experience | 2/3 | Executing | - |
+| 2. Hero Experience | 3/3 | Executing | - |
 | 3. Full LP + Animations | 0/TBD | Not started | - |
 | 4. Quality & Polish | 0/TBD | Not started | - |
