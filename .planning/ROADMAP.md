@@ -82,7 +82,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 7 plans
 
 **Wave 1**
-- [ ] 03-01-PLAN.md — lib/constants.ts: 8 new section copy exports (foundation for all sections)
+- [x] 03-01-PLAN.md — lib/constants.ts: 8 new section copy exports (foundation for all sections)
 
 **Wave 2** *(blocked on Wave 1)*
 - [ ] 03-02-PLAN.md — SECT-05 ComoFunciona + SECT-08 ParaQuem (Server Components)
