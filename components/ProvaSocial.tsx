@@ -50,14 +50,23 @@ function AnimatedCounter({ value, prefix = "", suffix = "" }: AnimatedCounterPro
     return () => controls.stop();
   }, [isInView, reducedMotion, value, prefix, suffix]);
 
+  const finalLabel = `${prefix}${value.toLocaleString("pt-BR")}${suffix}`;
+
   return (
-    <span
-      ref={ref}
-      className="font-serif text-5xl lg:text-[64px] font-semibold text-pruma-cyan leading-none tracking-tight tabular-nums"
-      aria-live="polite"
-    >
-      {prefix}0{suffix}
-    </span>
+    <>
+      {/* Animated span: aria-hidden so mid-flight values are not announced */}
+      <span
+        ref={ref}
+        aria-hidden="true"
+        className="font-serif text-5xl lg:text-[64px] font-semibold text-pruma-cyan leading-none tracking-tight tabular-nums"
+      >
+        {prefix}0{suffix}
+      </span>
+      {/* Visually hidden live region: receives final value once animation ends */}
+      <span className="sr-only" aria-live="polite" aria-atomic="true">
+        {isInView ? finalLabel : ""}
+      </span>
+    </>
   );
 }
 
