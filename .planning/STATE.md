@@ -11,8 +11,8 @@ See: .planning/PROJECT.md (updated 2026-05-06)
 
 Phase: 2 of 4 (Hero Experience)
 Plan: 0 of TBD in current phase
-Status: Phase 1 complete — ready to discuss/plan Phase 2
-Last activity: 2026-05-06 — Phase 1 executed and verified (2/2 plans, 12/12 must-haves)
+Status: Phase 2 UI-SPEC approved — ready to plan Phase 2
+Last activity: 2026-05-06 — Phase 2 UI-SPEC created and verified (6/6 dimensions, 4 PASS + 2 FLAG non-blocking)
 
 Progress: [██░░░░░░░░] 25%
 
