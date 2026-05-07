@@ -17,7 +17,7 @@ export function PainelGestor() {
     <section
       id="painel-gestor"
       aria-labelledby="painel-gestor-heading"
-      className="bg-pruma-white py-section-y-mobile lg:py-section-y-desktop"
+      className="bg-pruma-white py-section-y-mobile lg:py-section-y-desktop overflow-hidden"
     >
       <Container as="div">
         <SectionReveal>
@@ -54,9 +54,11 @@ export function PainelGestor() {
             {/* Center mockup — primeiro no mobile */}
             <motion.div
               variants={item}
-              className="order-1 lg:order-2 overflow-x-auto -mx-6 px-6 lg:mx-0 lg:px-0"
+              className="order-1 lg:order-2 overflow-x-auto -mx-4 sm:-mx-6 px-4 sm:px-6 lg:mx-0 lg:px-0 max-w-full"
             >
-              <PainelDashboard />
+              <div className="min-w-0">
+                <PainelDashboard />
+              </div>
             </motion.div>
 
             {/* Right callouts — 03 e 04 */}

@@ -35,6 +35,7 @@
 
 html {
   color-scheme: light;
+  overflow-x: hidden; /* Previne scroll horizontal de conteúdo fora do fluxo normal */
 }
 
 body {

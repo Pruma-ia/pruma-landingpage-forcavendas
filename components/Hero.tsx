@@ -15,7 +15,7 @@ export function Hero() {
     <section
       id="topo"
       aria-labelledby="hero-heading"
-      className="bg-pruma-white py-section-y-mobile lg:py-section-y-desktop"
+      className="bg-pruma-white py-section-y-mobile lg:py-section-y-desktop overflow-hidden"
     >
       <Container
         as="div"
@@ -66,8 +66,10 @@ export function Hero() {
 
         {/* Coluna do mockup — direita, pan horizontal em mobile */}
         <SectionReveal className="lg:col-span-5 w-full">
-          <motion.div variants={item} className="overflow-x-auto -mx-6 px-6 lg:mx-0 lg:px-0">
-            <PainelDashboard />
+          <motion.div variants={item} className="overflow-x-auto -mx-4 sm:-mx-6 px-4 sm:px-6 lg:mx-0 lg:px-0 max-w-full">
+            <div className="min-w-0">
+              <PainelDashboard />
+            </div>
           </motion.div>
         </SectionReveal>
       </Container>
