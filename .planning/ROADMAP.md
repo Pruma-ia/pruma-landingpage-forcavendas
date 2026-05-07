@@ -31,9 +31,14 @@ Decimal phases appear between their surrounding integers in numeric order.
   5. SEO metadata is set with the exact title and Open Graph tags defined in SETUP-05
 **Plans**: 2 plans
 
-Plans:
+**Wave 1**
 - [ ] 01-01-PLAN.md — Next.js scaffold + Tailwind tokens + font loading + globals.css
+
+**Wave 2** *(bloqueada na conclusão da Wave 1)*
 - [ ] 01-02-PLAN.md — SEO metadata + lib/constants.ts + quatro primitivos UI (Eyebrow, Button, Card, Container)
+
+**Cross-cutting constraints:**
+- Todos os tokens Tailwind (`pruma.*`) definidos em 01-01 são consumidos por 01-02 — Wave 2 não pode iniciar sem Wave 1 completa
 
 **UI hint**: yes
 
