@@ -29,7 +29,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Fraunces, Inter, and JetBrains Mono are served via `next/font` with CSS variables accessible in layout
   4. Eyebrow, Button (primary + ghost), Card, and Container components render correctly in isolation
   5. SEO metadata is set with the exact title and Open Graph tags defined in SETUP-05
-**Plans**: TBD
+**Plans**: 2 plans
+
+Plans:
+- [ ] 01-01-PLAN.md — Next.js scaffold + Tailwind tokens + font loading + globals.css
+- [ ] 01-02-PLAN.md — SEO metadata + lib/constants.ts + quatro primitivos UI (Eyebrow, Button, Card, Container)
+
 **UI hint**: yes
 
 ### Phase 2: Hero Experience
@@ -77,7 +82,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/TBD | Not started | - |
+| 1. Foundation | 0/2 | Ready to execute | - |
 | 2. Hero Experience | 0/TBD | Not started | - |
 | 3. Full LP + Animations | 0/TBD | Not started | - |
 | 4. Quality & Polish | 0/TBD | Not started | - |
