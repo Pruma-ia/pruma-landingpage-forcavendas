@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Fraunces, Inter, JetBrains_Mono } from "next/font/google";
 import { SITE_TITLE, SITE_DESCRIPTION } from "@/lib/constants";
+import { Navbar } from "@/components/Navbar";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -51,7 +52,16 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${fraunces.variable} ${inter.variable} ${mono.variable}`}
     >
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        <a
+          href="#topo"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-pruma-white focus:text-pruma-navy focus:px-4 focus:py-2 focus:rounded-pruma-sm focus:shadow-pruma-md"
+        >
+          Pular para conteúdo
+        </a>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
