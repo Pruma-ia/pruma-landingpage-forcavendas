@@ -114,7 +114,7 @@ export const MOCK_APP = {
   adjustment: { label: "Ajuste política comercial", value: -29.67 },
   subtotal: 19020.28,
   discountPercent: 3,
-  discountValue: 569.61,
+  discountValue: 570.61,
   total: 18420.0,
 } as const;
 
