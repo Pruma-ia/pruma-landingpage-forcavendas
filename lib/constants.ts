@@ -476,6 +476,9 @@ export const CTA_FINAL = {
 
 // ─── Footer (SECT-12) ─────────────────────────────────────────────────────────
 
+const contactEmail =
+  process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "contato@pruma.com.br";
+
 /** Copy do Footer — fundo azul marinho, 3 colunas de links, tagline, copyright. */
 export const FOOTER = {
   tagline: "Governança comercial para B2B",
@@ -500,11 +503,11 @@ export const FOOTER = {
     {
       heading: "CONTATO",
       links: [
-        { label: "kelly.lima@w1business.com.br", href: "mailto:kelly.lima@w1business.com.br" },
-        { label: "LinkedIn",                     href: "#"                                   },
-        { label: "WhatsApp",                     href: "#"                                   },
+        { label: contactEmail, href: `mailto:${contactEmail}` },
+        { label: "LinkedIn",   href: "#"                      },
+        { label: "WhatsApp",   href: "#"                      },
       ],
     },
   ],
   copyright: "© 2026 Pruma Consultoria. Todos os direitos reservados.",
-} as const;
+};
