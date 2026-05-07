@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Fraunces, Inter, JetBrains_Mono } from "next/font/google";
+import { SITE_TITLE, SITE_DESCRIPTION } from "@/lib/constants";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -24,8 +25,20 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Pruma LP",
-  description: "Pruma — App de Força de Vendas B2B",
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
+  openGraph: {
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    type: "website",
+    locale: "pt_BR",
+    siteName: "Pruma",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+  },
 };
 
 export default function RootLayout({
