@@ -189,3 +189,322 @@ export const MOCK_PAINEL = {
     ],
   },
 } as const;
+
+// ─── Como Funciona (SECT-05) ──────────────────────────────────────────────────
+
+/** Copy da seção Como Funciona — Claude defines per D-04, SECT-05 spec. Usuário/campo perspective. */
+export const COMO_FUNCIONA = {
+  eyebrow: "— COMO FUNCIONA",
+  headline: "Quatro passos. Do território ao painel.",
+  subheadline: "Um vendedor visita um cliente. A operação inteira sente.",
+  steps: [
+    {
+      title: "Rota planejada",
+      description:
+        "O vendedor abre o dia com a lista de visitas priorizada pela curva ABC. Sem improviso de roteiro.",
+      icon: "MapPin" as const,
+    },
+    {
+      title: "Pedido no campo",
+      description:
+        "Abre o cliente, vê histórico de compras e saldo de crédito. Lança o pedido com a tabela de preço correta aplicada automaticamente.",
+      icon: "ShoppingCart" as const,
+    },
+    {
+      title: "Política aplicada",
+      description:
+        "Desconto dentro do limite configurado. Exceções pedem aprovação antes de ir para o ERP — não depois.",
+      icon: "ShieldCheck" as const,
+    },
+    {
+      title: "Fechamento com visibilidade",
+      description:
+        "O gestor vê o pedido consolidado em tempo real. Não espera o retorno do vendedor para saber o que aconteceu.",
+      icon: "BarChart3" as const,
+    },
+  ],
+} as const;
+
+// ─── Painel do Gestor (SECT-06) ───────────────────────────────────────────────
+
+/** Copy da seção Painel do Gestor — D-17, D-19. 4 callouts provocativos, tom conselheiro sênior. */
+export const PAINEL_GESTOR = {
+  eyebrow: "— PAINEL DO GESTOR",
+  headline: "O painel não é um relatório. É uma decisão.",
+  subheadline: "Visibilidade de operação para quem precisa agir, não apenas ver.",
+  callouts: [
+    {
+      number: "01",
+      text: "Veja quem vai cancelar antes de cancelar.",
+    },
+    {
+      number: "02",
+      text: "Desconto dado errado custa mais do que cliente perdido.",
+    },
+    {
+      number: "03",
+      text: "20% dos clientes explicam 80% da receita. Você sabe quais são os seus?",
+    },
+    {
+      number: "04",
+      text: "Pipeline não fecha no relatório. Fecha na visita certa, no dia certo.",
+    },
+  ],
+} as const;
+
+// ─── Funcionalidades (SECT-07) ────────────────────────────────────────────────
+
+/** Copy da seção Funcionalidades — D-01 through D-04. Bento grid: 1 hero + 5 cards. */
+export const FUNCIONALIDADES = {
+  eyebrow: "— FUNCIONALIDADES",
+  headline: "Seis instrumentos. Um sistema.",
+  subheadline:
+    "Cada funcionalidade resolve uma parte do problema. Juntas, fecham o ciclo da operação comercial.",
+  features: [
+    {
+      isHero: true,
+      title: "Painel do Gestor em tempo real",
+      description: "",
+      iconName: "",
+    },
+    {
+      isHero: false,
+      title: "App do vendedor em campo",
+      description:
+        "Pedido, histórico e tabela de preço na palma da mão — sem papel, sem planilha.",
+      iconName: "Smartphone" as const,
+    },
+    {
+      isHero: false,
+      title: "Política comercial unificada",
+      description:
+        "Um único conjunto de regras. Cada vendedor aplica o desconto certo, sem exceção.",
+      iconName: "Sliders" as const,
+    },
+    {
+      isHero: false,
+      title: "Curva ABC e priorização",
+      description:
+        "Foco nos clientes que fazem a receita. Não nos que ocupam a agenda.",
+      iconName: "TrendingUp" as const,
+    },
+    {
+      isHero: false,
+      title: "Gestão de clientes em risco",
+      description:
+        "Churn silencioso identificado antes do cancelamento. Ação antes do estrago.",
+      iconName: "AlertTriangle" as const,
+    },
+    {
+      isHero: false,
+      title: "Relatórios e visibilidade",
+      description:
+        "Da operação ao conselho — o mesmo número, sem reconstituição manual.",
+      iconName: "BarChart2" as const,
+    },
+  ],
+} as const;
+
+// ─── Para Quem (SECT-08) ──────────────────────────────────────────────────────
+
+/** Copy da seção Para Quem — Claude defines per SECT-08 spec. 3 perfis com âncoras de receita. */
+export const PARA_QUEM = {
+  eyebrow: "— PARA QUEM",
+  headline: "Operações que decidem em escala, não em planilha.",
+  subheadline:
+    "Pruma é para empresas que já passaram do improviso e precisam de governança comercial de verdade.",
+  profiles: [
+    {
+      segment: "INDÚSTRIA",
+      iconName: "Factory" as const,
+      title: "Fabricante com canal de distribuição",
+      anchor: "R$ 30M–300M / ano · 10–80 vendedores",
+      description:
+        "Sua força de vendas terceirizada ou própria precisa aplicar a política da fábrica em campo — preço, desconto, mix. Hoje o controle chega tarde, se chega.",
+    },
+    {
+      segment: "DISTRIBUIDORA",
+      iconName: "Truck" as const,
+      title: "Distribuidora com carteira regional",
+      anchor: "R$ 20M–150M / ano · 8–50 vendedores",
+      description:
+        "Você compra do fabricante, vende para o varejo, e vive no meio. Margem apertada, carteira grande, e cada vendedor com uma planilha diferente.",
+    },
+    {
+      segment: "EMPRESA EM TRANSIÇÃO",
+      iconName: "ArrowUpRight" as const,
+      title: "Empresa crescendo além da planilha",
+      anchor: "R$ 15M–80M / ano · 5–30 vendedores",
+      description:
+        "O processo atual funcionou até os R$ 10M. Agora ele é o gargalo. Você precisa de sistema antes de precisar de mais vendedores.",
+    },
+  ],
+} as const;
+
+// ─── Diferencial Pruma (SECT-09) ──────────────────────────────────────────────
+
+/** Copy da seção Diferencial Pruma — dark section. 3 pilares: método, tecnologia, implantação. */
+export const DIFERENCIAL = {
+  eyebrow: "— DIFERENCIAL PRUMA",
+  headline: "Não é app. É método com tecnologia.",
+  subheadline:
+    "Consultoria que instala o processo, tecnologia que executa. Nessa ordem.",
+  pillars: [
+    {
+      number: "01",
+      iconName: "Compass" as const,
+      title: "Método antes de tecnologia",
+      description:
+        "A Pruma não vende software. Instala o processo comercial primeiro — preço, segmentação, ciclo de visita. O app executa o que está definido.",
+    },
+    {
+      number: "02",
+      iconName: "Monitor" as const,
+      title: "Tecnologia que respeita o dado",
+      description:
+        "Integração com seu ERP. Nenhuma planilha paralela. Um número que o vendedor, o gestor e o conselho leem da mesma fonte.",
+    },
+    {
+      number: "03",
+      iconName: "CheckSquare" as const,
+      title: "Implantação sem projeto de TI",
+      description:
+        "Trinta dias para o primeiro vendedor operar. Sem meses de consultoria, sem customização interminável.",
+    },
+  ],
+} as const;
+
+// ─── Prova Social (SECT-10) ───────────────────────────────────────────────────
+
+/** Copy da seção Prova Social — placeholder data, TODO para substituição com dados reais do cliente. */
+export const PROVA_SOCIAL = {
+  eyebrow: "— PROVA SOCIAL",
+  headline: "Operações reais. Resultados que cabem em uma linha.",
+  subheadline:
+    "Números de operações que deixaram de improvisar.",
+  metrics: [
+    {
+      value: 847,
+      prefix: "",
+      suffix: "",
+      label: "EMPRESAS ATENDIDAS",
+    },
+    {
+      value: 94,
+      prefix: "",
+      suffix: "%",
+      label: "ADOÇÃO EM 30 DIAS",
+    },
+    {
+      value: 3,
+      prefix: "",
+      suffix: "H",
+      label: "ECONOMIZADAS/VENDEDOR/SEMANA",
+    },
+  ],
+  depoimento: {
+    quote:
+      "Antes do Pruma, a reunião mensal era uma sessão de arqueologia de planilha. Hoje o conselho entra na sala com os números do dia.",
+    author: "Ricardo Mendes",
+    role: "Diretor Comercial",
+    company: "Distribuidora Regional do setor automotivo",
+  },
+  logos: [
+    { id: "logo-1", alt: "Logo placeholder — substituir" },
+    { id: "logo-2", alt: "Logo placeholder — substituir" },
+    { id: "logo-3", alt: "Logo placeholder — substituir" },
+  ],
+} as const;
+
+// ─── CTA Final (SECT-11) ──────────────────────────────────────────────────────
+
+/** Copy da seção CTA Final — formulário com 8 campos (6 text/email/tel/textarea + 2 selects). */
+export const CTA_FINAL = {
+  eyebrow: "— FALE COM UM CONSULTOR",
+  headline: "Ver Pruma rodando na sua operação.",
+  subheadline:
+    "Preencha os campos abaixo. Nossa equipe analisa o perfil e entra em contato em até 1 dia útil.",
+  microcopy: "SEM COMPROMISSO · RESPOSTA EM 1 DIA ÚTIL",
+  fields: {
+    nome: {
+      label: "Nome",
+      placeholder: "João Silva",
+    },
+    email: {
+      label: "E-mail corporativo",
+      placeholder: "joao@empresa.com.br",
+    },
+    telefone: {
+      label: "Telefone",
+      placeholder: "(11) 99999-9999",
+    },
+    empresa: {
+      label: "Empresa",
+      placeholder: "Distribuidora Exemplo Ltda",
+    },
+    cargo: {
+      label: "Cargo",
+      placeholder: "Diretor Comercial",
+    },
+    desafio: {
+      label: "Desafio atual",
+      placeholder: "Descreva o principal desafio da sua operação comercial",
+    },
+    vendedores: {
+      label: "Quantos vendedores em campo?",
+      options: [
+        { value: "1-5",  label: "1 a 5"      },
+        { value: "6-15", label: "6 a 15"     },
+        { value: "16-30",label: "16 a 30"    },
+        { value: "30+",  label: "Mais de 30" },
+      ],
+    },
+    segmento: {
+      label: "Segmento",
+      options: [
+        { value: "industria",     label: "Indústria"     },
+        { value: "distribuidora", label: "Distribuidora" },
+        { value: "atacado",       label: "Atacado"       },
+        { value: "outro",         label: "Outro"         },
+      ],
+    },
+  },
+  successHeadline: "Recebemos seu contato.",
+  successSubtext: "Nossa equipe entra em contato em até 1 dia útil.",
+  successMicrocopy: "SEM SPAM · SEM COMPROMISSO",
+} as const;
+
+// ─── Footer (SECT-12) ─────────────────────────────────────────────────────────
+
+/** Copy do Footer — fundo azul marinho, 3 colunas de links, tagline, copyright. */
+export const FOOTER = {
+  tagline: "Governança comercial para B2B",
+  columns: [
+    {
+      heading: "PRODUTO",
+      links: [
+        { label: "Como funciona",      href: "#como-funciona"   },
+        { label: "Funcionalidades",    href: "#funcionalidades" },
+        { label: "Para quem",          href: "#para-quem"       },
+        { label: "Falar com consultor",href: "#contato"         },
+      ],
+    },
+    {
+      heading: "EMPRESA",
+      links: [
+        { label: "Sobre a Pruma", href: "#" },
+        { label: "Metodologia",   href: "#" },
+        { label: "Blog",          href: "#" },
+      ],
+    },
+    {
+      heading: "CONTATO",
+      links: [
+        { label: "kelly.lima@w1business.com.br", href: "mailto:kelly.lima@w1business.com.br" },
+        { label: "LinkedIn",                     href: "#"                                   },
+        { label: "WhatsApp",                     href: "#"                                   },
+      ],
+    },
+  ],
+  copyright: "© 2026 Pruma Consultoria. Todos os direitos reservados.",
+} as const;
