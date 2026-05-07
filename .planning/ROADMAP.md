@@ -12,7 +12,7 @@ Four coarse phases deliver a complete, production-ready landing page for Pruma's
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation** - Next.js scaffold, Pruma design tokens, and UI component primitives
+- [x] **Phase 1: Foundation** - Next.js scaffold, Pruma design tokens, and UI component primitives *(complete 2026-05-06)*
 - [ ] **Phase 2: Hero Experience** - Above-fold sections (Navbar, Hero, Diagnóstico, Tese) plus both HTML/CSS mockup components
 - [ ] **Phase 3: Full LP + Animations** - Remaining 8 sections (Como Funciona → Footer) with Framer Motion animation layer
 - [ ] **Phase 4: Quality & Polish** - Responsiveness audit, Lighthouse validation, copy centralization, and CTA placement verification
@@ -32,10 +32,10 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 2 plans
 
 **Wave 1**
-- [ ] 01-01-PLAN.md — Next.js scaffold + Tailwind tokens + font loading + globals.css
+- [x] 01-01-PLAN.md — Next.js scaffold + Tailwind tokens + font loading + globals.css
 
 **Wave 2** *(bloqueada na conclusão da Wave 1)*
-- [ ] 01-02-PLAN.md — SEO metadata + lib/constants.ts + quatro primitivos UI (Eyebrow, Button, Card, Container)
+- [x] 01-02-PLAN.md — SEO metadata + lib/constants.ts + quatro primitivos UI (Eyebrow, Button, Card, Container)
 
 **Cross-cutting constraints:**
 - Todos os tokens Tailwind (`pruma.*`) definidos em 01-01 são consumidos por 01-02 — Wave 2 não pode iniciar sem Wave 1 completa
