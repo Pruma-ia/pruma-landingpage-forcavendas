@@ -115,8 +115,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 4 plans
 
 **Wave 1** *(paralelo — sem dependências mútuas)*
-- [ ] 04-01-PLAN.md — Build verification: TypeScript audit + ESLint audit + fix zero-day errors
-- [ ] 04-02-PLAN.md — Copy centralization audit + /* EDITÁVEL */ comments + CTA touchpoints verification
+- [x] 04-01-PLAN.md — Build verification: TypeScript audit + ESLint audit + fix zero-day errors
+- [x] 04-02-PLAN.md — Copy centralization audit + /* EDITÁVEL */ comments + CTA touchpoints verification
 
 **Wave 2** *(bloqueada na conclusão de 04-01)*
 - [ ] 04-03-PLAN.md — Responsiveness audit (375px, 768px, 1024px, 1440px) + overflow fixes + touch targets
@@ -136,4 +136,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | 1. Foundation | 2/2 | Complete | 2026-05-06 |
 | 2. Hero Experience | 3/3 | Complete | 2026-05-07 |
 | 3. Full LP + Animations | 7/7 | Complete | 2026-05-07 |
-| 4. Quality & Polish | 0/4 | Not started | - |
+| 4. Quality & Polish | 2/4 | Executing | - |
