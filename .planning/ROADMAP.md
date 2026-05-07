@@ -79,7 +79,27 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Prova Social (SECT-10) shows placeholder logos, three large Fraunces 64px cyan numbers, and a depoimento card — all annotated with `<!-- TODO: substituir -->` comments
   4. CTA Final form (SECT-11) shows 8 fields + 2 selects and transitions to a success state on submission without any backend call
   5. Scroll-triggered fade-up animations fire correctly on list items and grid cards; counter animation runs 0 → final value over 1.5s when Prova Social enters the viewport; card and button hover states respond as specified
-**Plans**: TBD
+**Plans**: 7 plans
+
+**Wave 1**
+- [ ] 03-01-PLAN.md — lib/constants.ts: 8 new section copy exports (foundation for all sections)
+
+**Wave 2** *(blocked on Wave 1)*
+- [ ] 03-02-PLAN.md — SECT-05 ComoFunciona + SECT-08 ParaQuem (Server Components)
+- [ ] 03-03-PLAN.md — SECT-06 PainelGestor + SECT-09 Diferencial (Server Components, dark section)
+- [ ] 03-04-PLAN.md — SECT-07 Funcionalidades bento + SECT-12 Footer (Server Components)
+
+**Wave 3** *(blocked on Wave 1)*
+- [ ] 03-05-PLAN.md — SECT-10 ProvaSocial + ANIM-02 counter animation (client)
+- [ ] 03-06-PLAN.md — SECT-11 CTAFinal form + AnimatePresence success state (client)
+
+**Wave 4** *(blocked on Waves 2 + 3)*
+- [ ] 03-07-PLAN.md — ANIM-01 fade-up retroactive on all sections + ANIM-03 hover verification + app/page.tsx composition
+
+**Cross-cutting constraints:**
+- All Phase 3 sections consume copy from lib/constants.ts — Plan 03-01 must complete before any other plan starts
+- ANIM-01 wraps every section — Plan 03-07 cannot start until all 6 section plans (03-02..03-06) ship
+- app/page.tsx composition is consolidated in Plan 03-07 to avoid file-write conflicts across waves
 **UI hint**: yes
 
 ### Phase 4: Quality & Polish
