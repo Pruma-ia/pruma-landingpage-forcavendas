@@ -189,3 +189,154 @@ export const MOCK_PAINEL = {
     ],
   },
 } as const;
+
+// ─── Como Funciona (SECT-05) ──────────────────────────────────────────────────
+
+/** Copy da seção Como Funciona — Claude defines per D-04, SECT-05 spec. Usuário/campo perspective. */
+export const COMO_FUNCIONA = {
+  eyebrow: "— COMO FUNCIONA",
+  headline: "Quatro passos. Do território ao painel.",
+  subheadline: "Um vendedor visita um cliente. A operação inteira sente.",
+  steps: [
+    {
+      title: "Rota planejada",
+      description:
+        "O vendedor abre o dia com a lista de visitas priorizada pela curva ABC. Sem improviso de roteiro.",
+      icon: "MapPin" as const,
+    },
+    {
+      title: "Pedido no campo",
+      description:
+        "Abre o cliente, vê histórico de compras e saldo de crédito. Lança o pedido com a tabela de preço correta aplicada automaticamente.",
+      icon: "ShoppingCart" as const,
+    },
+    {
+      title: "Política aplicada",
+      description:
+        "Desconto dentro do limite configurado. Exceções pedem aprovação antes de ir para o ERP — não depois.",
+      icon: "ShieldCheck" as const,
+    },
+    {
+      title: "Fechamento com visibilidade",
+      description:
+        "O gestor vê o pedido consolidado em tempo real. Não espera o retorno do vendedor para saber o que aconteceu.",
+      icon: "BarChart3" as const,
+    },
+  ],
+} as const;
+
+// ─── Painel do Gestor (SECT-06) ───────────────────────────────────────────────
+
+/** Copy da seção Painel do Gestor — D-17, D-19. 4 callouts provocativos, tom conselheiro sênior. */
+export const PAINEL_GESTOR = {
+  eyebrow: "— PAINEL DO GESTOR",
+  headline: "O painel não é um relatório. É uma decisão.",
+  subheadline: "Visibilidade de operação para quem precisa agir, não apenas ver.",
+  callouts: [
+    {
+      number: "01",
+      text: "Veja quem vai cancelar antes de cancelar.",
+    },
+    {
+      number: "02",
+      text: "Desconto dado errado custa mais do que cliente perdido.",
+    },
+    {
+      number: "03",
+      text: "20% dos clientes explicam 80% da receita. Você sabe quais são os seus?",
+    },
+    {
+      number: "04",
+      text: "Pipeline não fecha no relatório. Fecha na visita certa, no dia certo.",
+    },
+  ],
+} as const;
+
+// ─── Funcionalidades (SECT-07) ────────────────────────────────────────────────
+
+/** Copy da seção Funcionalidades — D-01 through D-04. Bento grid: 1 hero + 5 cards. */
+export const FUNCIONALIDADES = {
+  eyebrow: "— FUNCIONALIDADES",
+  headline: "Seis instrumentos. Um sistema.",
+  subheadline:
+    "Cada funcionalidade resolve uma parte do problema. Juntas, fecham o ciclo da operação comercial.",
+  features: [
+    {
+      isHero: true,
+      title: "Painel do Gestor em tempo real",
+      description: "",
+      iconName: "",
+    },
+    {
+      isHero: false,
+      title: "App do vendedor em campo",
+      description:
+        "Pedido, histórico e tabela de preço na palma da mão — sem papel, sem planilha.",
+      iconName: "Smartphone" as const,
+    },
+    {
+      isHero: false,
+      title: "Política comercial unificada",
+      description:
+        "Um único conjunto de regras. Cada vendedor aplica o desconto certo, sem exceção.",
+      iconName: "Sliders" as const,
+    },
+    {
+      isHero: false,
+      title: "Curva ABC e priorização",
+      description:
+        "Foco nos clientes que fazem a receita. Não nos que ocupam a agenda.",
+      iconName: "TrendingUp" as const,
+    },
+    {
+      isHero: false,
+      title: "Gestão de clientes em risco",
+      description:
+        "Churn silencioso identificado antes do cancelamento. Ação antes do estrago.",
+      iconName: "AlertTriangle" as const,
+    },
+    {
+      isHero: false,
+      title: "Relatórios e visibilidade",
+      description:
+        "Da operação ao conselho — o mesmo número, sem reconstituição manual.",
+      iconName: "BarChart2" as const,
+    },
+  ],
+} as const;
+
+// ─── Para Quem (SECT-08) ──────────────────────────────────────────────────────
+
+/** Copy da seção Para Quem — Claude defines per SECT-08 spec. 3 perfis com âncoras de receita. */
+export const PARA_QUEM = {
+  eyebrow: "— PARA QUEM",
+  headline: "Operações que decidem em escala, não em planilha.",
+  subheadline:
+    "Pruma é para empresas que já passaram do improviso e precisam de governança comercial de verdade.",
+  profiles: [
+    {
+      segment: "INDÚSTRIA",
+      iconName: "Factory" as const,
+      title: "Fabricante com canal de distribuição",
+      anchor: "R$ 30M–300M / ano · 10–80 vendedores",
+      description:
+        "Sua força de vendas terceirizada ou própria precisa aplicar a política da fábrica em campo — preço, desconto, mix. Hoje o controle chega tarde, se chega.",
+    },
+    {
+      segment: "DISTRIBUIDORA",
+      iconName: "Truck" as const,
+      title: "Distribuidora com carteira regional",
+      anchor: "R$ 20M–150M / ano · 8–50 vendedores",
+      description:
+        "Você compra do fabricante, vende para o varejo, e vive no meio. Margem apertada, carteira grande, e cada vendedor com uma planilha diferente.",
+    },
+    {
+      segment: "EMPRESA EM TRANSIÇÃO",
+      iconName: "ArrowUpRight" as const,
+      title: "Empresa crescendo além da planilha",
+      anchor: "R$ 15M–80M / ano · 5–30 vendedores",
+      description:
+        "O processo atual funcionou até os R$ 10M. Agora ele é o gargalo. Você precisa de sistema antes de precisar de mais vendedores.",
+    },
+  ],
+} as const;
