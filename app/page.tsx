@@ -6,7 +6,6 @@ import { PainelGestor } from "@/components/PainelGestor";
 import { Funcionalidades } from "@/components/Funcionalidades";
 import { ParaQuem } from "@/components/ParaQuem";
 import { Diferencial } from "@/components/Diferencial";
-import { ProvaSocial } from "@/components/ProvaSocial";
 import { CTAFinal } from "@/components/CTAFinal";
 import { Footer } from "@/components/Footer";
 
@@ -21,7 +20,6 @@ export default function Home() {
       <Funcionalidades />
       <ParaQuem />
       <Diferencial />
-      <ProvaSocial />
       <CTAFinal />
       <Footer />
     </main>
