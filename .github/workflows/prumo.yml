@@ -1,0 +1,25 @@
+# Prumo Gates — kit satélite (instalado/atualizado pelo bootstrap.sh da plataforma;
+# não editar à mão — mudança se perde no próximo bootstrap).
+# É a camada que alcança qualquer máquina, com ou sem hook local. Sem válvula.
+name: Prumo Gates
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
+
+jobs:
+  prumo:
+    name: Prumo — commit-check + sensitive-data
+    if: >
+      github.event.action != 'edited' || github.event.changes.base
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - name: commit-check
+        run: |
+          git fetch origin "${{ github.base_ref }}" --depth=200
+          git fetch origin "${{ github.event.pull_request.head.sha }}" --depth=200 || true
+          node scripts/prumo/commit-check.cjs --range "origin/${{ github.base_ref }}..${{ github.event.pull_request.head.sha }}"
+      - name: sensitive-data-check
+        run: node scripts/prumo/sensitive-data-check.cjs --base "origin/${{ github.base_ref }}"
